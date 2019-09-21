@@ -45,11 +45,11 @@ public class nastySurprise implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stubpup
 		if (button == e.getSource()) {
-			showPictureFromTheInternet("pups.jpg");
+			showPictureFromTheInternet("https://www.thelabradorsite.com/wp-content/uploads/2019/03/Cute-puppy-Names-Over-200-Adorable-Ideas-LS-long.jpg");
 
 		}
 		if (button2 == e.getSource()) {
-			showPictureFromTheInternet("oj.jpg");
+			showPictureFromTheInternet("https://www.nydailynews.com/resizer/EY_4Q20DxKXuaA2yXMNW52hmkN4=/800x542/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/ABRM7TW6WJALDEB6ZARYTSCOF4.jpg");
 		}
 	}
 
