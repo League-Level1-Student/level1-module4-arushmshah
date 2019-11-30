@@ -1,6 +1,6 @@
 package _08_calculator;
 
-import java.awt.event.ActionEvent;
+import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
@@ -35,30 +35,56 @@ void userinterthingy() {
 	sub.addActionListener(this);
 	mult.addActionListener(this);
 	div.addActionListener(this);
-	frame.pack();
+	frame.pack();                                                                           
+}
+double a;
+String v1;
+double vone;
+String v2;
+int vtwo;
+
+void addition() {
+	a = vone + vtwo ;
+	System.out.println(a);
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+}
+void subtraction() {
+	a = vone - vtwo ;
+	System.out.println(a);
+}
+void multiplacation() {
+	a = vone * vtwo ;
+	System.out.println(a);
+}
+void division() {
+	a = vone/vtwo ;
+	System.out.println(a);
 }
 
 @Override
 public void actionPerformed(ActionEvent e) {
 	// TODO Auto-generated method stub
-	String v1 = tf.getText();
+	 v1 = tf.getText();
+	 vone = Double.parseDouble(v1);
+	 v2 = tf2.getText();
+	 vtwo = (int) Double.parseDouble(v2);
+	
 	if(e.getSource()==add) {
-		int vone = Integer.parseInt(v1);
+		addition();
+	}
+	
+	if(e.getSource()==sub) {
+		subtraction();
+	}
+	
+	if(e.getSource()==mult) {
+		multiplacation();
+	}
+	
+	if(e.getSource()==div) {
+		division();
+	}
+	label.setText(String.valueOf(a));
+	frame.pack();
 }
-
-
 }
-}
-
-
