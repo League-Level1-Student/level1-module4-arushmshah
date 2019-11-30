@@ -4,7 +4,7 @@ public class Twitter_Runner {
 	public static void main(String[] args) {
 		
 	
-Twitter twetet = new Twitter();
-twetet.userinterface();
+Latest_Twitter tweetet = new Latest_Twitter();
+tweetet.userinterface();
 	}
 }
